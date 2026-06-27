@@ -25,6 +25,7 @@ const io = new Server(httpServer, {
 });
 
 // Middleware
+app.set('trust proxy', 1); // Required for Render and other reverse proxies
 app.use(helmet({ contentSecurityPolicy: false }));
 app.use(cors());
 app.use(morgan('dev'));
