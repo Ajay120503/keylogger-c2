@@ -1,0 +1,13 @@
+# ============================
+# Server .gitignore
+# Backend Node.js / Express
+# ============================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp.*
+.yarn/
+
+.env
